@@ -22,7 +22,7 @@ def change_suffix(file_name,to_suffix):
 
 root = tkinter.Tk()
 root.withdraw()
-fTyp =[("","*")]
+fTyp =[("json","*.json")("","*")]
 iDir=os.path.abspath(os.path.dirname(__file__))
 print("jsonをscvに変更します")
 print("対象ファイルを選んでください")
