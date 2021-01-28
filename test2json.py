@@ -28,6 +28,9 @@ print("jsonをscvに変更します")
 print("対象ファイルを選んでください")
 file0=tkinter.filedialog.askopenfilename(filetypes=fTyp,initialdir = iDir)
 file = codecs.open(file0,'r',"utf_8")
+if len(file) ==0:
+	print("ファイルを選んでください")
+	exit()
 data=json.load(file)
 file.close()
 if isinstance(data,list):
